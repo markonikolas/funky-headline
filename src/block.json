@@ -1,0 +1,19 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "markonikolas/funky-headline",
+	"version": "0.0.1",
+	"title": "Funky Headline",
+	"category": "text",
+	"icon": "carrot",
+	"description": "A funky headline block with an eye-catching look :)",
+	"example": {},
+	"supports": {
+		"html": false
+	},
+	"textdomain": "funky-headline",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css",
+	"viewScript": "file:./view.js"
+}
