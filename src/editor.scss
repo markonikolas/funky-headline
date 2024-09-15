@@ -1,3 +1,11 @@
 .wp-block-markonikolas-funky-headline {
-	border: 1px dotted #f00;
+	position: relative;
+	opacity: 0.75;
+	transition: opacity 150ms ease, transform 350ms ease-in;
+
+	&.is-selected {
+		opacity: 1;
+		transform: scale(1.05);
+	}
 }
+

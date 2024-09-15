@@ -7,9 +7,45 @@
 	"category": "text",
 	"icon": "carrot",
 	"description": "A funky headline block with an eye-catching look :)",
-	"example": {},
+	"example": {
+		"kicker": {
+			"type": "string",
+			"default": "Real Science"
+		},
+		"headline": {
+			"type": "string",
+			"default": "Colorful Headlines Increase Reader Engagement by 400%"
+		},
+		"subdeck": {
+			"type": "string",
+			"default": "Boffins at the University of Science discover the secrets of colorful headlines and how they hypnotise anyone who reads them."
+		}
+	},
 	"supports": {
-		"html": false
+		"color": {
+			"background": true,
+			"gradients": true,
+			"text": false
+		},
+		"html": false,
+		"spacing": {
+			"padding": true,
+			"margin": true
+		}
+	},
+	"attributes": {
+		"kicker": {
+			"type": "string",
+			"default": "Real Science"
+		},
+		"headline": {
+			"type": "string",
+			"default": "Colorful Headlines Increase Reader Engagement by 400%"
+		},
+		"subdeck": {
+			"type": "string",
+			"default": "Boffins at the University of Science discover the secrets of colorful headlines and how they hypnotise anyone who reads them."
+		}
 	},
 	"textdomain": "funky-headline",
 	"editorScript": "file:./index.js",
