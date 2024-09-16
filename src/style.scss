@@ -1,5 +1,10 @@
-.wp-block-markonikolas-funky-headline {
-	background-color: #21759b;
-	color: #fff;
-	padding: 2px;
+.wp-block {
+	&__kicker {
+		padding: 4px;
+		margin: 0;
+	}
+
+	&__headline {
+		margin-block: 10px;
+	}
 }
