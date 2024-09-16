@@ -9,5 +9,3 @@ jobs:
         run: yarn
       - name: Run ESLint
         run: eslint . --ext .js,.jsx,.ts,.tsx
-        with:
-          files: src/
