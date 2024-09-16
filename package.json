@@ -10,7 +10,8 @@
 	  "poststart": "npm run cli wp rewrite structure '/%postname%/' && npm run assets:start",
 	  "prepare": "husky install",
 	  "assets:start": "wp-scripts start",
-	  "assets:build": "wp-scripts build"
+	  "assets:build": "wp-scripts build",
+	  "lint": "eslint ./src --ext .js,.jsx,.ts,.tsx"
   },
   "keywords": [
     "Gutenberg",
