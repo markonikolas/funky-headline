@@ -2,29 +2,42 @@ import PropTypes from 'prop-types';
 import { RichText, useBlockProps } from '@wordpress/block-editor';
 
 export default function Save( { attributes } ) {
-	const { Content } = RichText;
-	const { kicker, headline, subdeck } = attributes;
+	const { Content: RichTextContent } = RichText;
+	const {
+		kicker,
+		kickerColor,
+		kickerBackgroundColor,
+		headline,
+		headlineColor,
+		subdeck,
+		subdeckColor
+	} = attributes;
 
 	return (
 		<div { ...useBlockProps.save() }>
-			<Content
+			<RichTextContent
 				tagName="span"
 				value={ kicker }
+				className={ 'wp-block__kicker' }
+				style={ { color: kickerColor, backgroundColor: kickerBackgroundColor } }
 			/>
-			<Content
-				tagName="h2"
+			<RichTextContent
+				tagName="h1"
 				value={ headline }
+				className={ 'wp-block__headline' }
+				style={ { color: headlineColor } }
 			/>
-			<Content
+			<RichTextContent
 				tagName="p"
 				value={ subdeck }
+				className={ 'wp-block__subdeck' }
+				style={ { color: subdeckColor } }
 			/>
-
 		</div>
 	);
 }
 
-Save.PropTypes = {
+Save.propTypes = {
 	attributes: PropTypes.object,
 	kicker: PropTypes.string,
 	headline: PropTypes.string,
