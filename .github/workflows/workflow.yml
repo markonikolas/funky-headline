@@ -1,7 +1,7 @@
 name: CI
 on: push
 jobs:
-  setup:
+  lint:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -11,10 +11,5 @@ jobs:
           cache: 'npm'
       - name: Install modules
         run: yarn
-  lint:
-    needs: setup
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
       - name: Run ESLint
         run: npm run lint
