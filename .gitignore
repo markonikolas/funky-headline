@@ -40,3 +40,6 @@ yarn-error.log*
 
 # cache
 phpcs.cache
+
+# @wordpress/env
+.wp-env.override.json

@@ -8,13 +8,19 @@ uses @wordpress/scripts for building assets, as well as linting capabilities.
 To start this project, simply run
 
 ```shell
-npm install
+yarn install
 ```
 
-then
+then run the development environment with
 
 ```shell
-npm start
+yarn start
+```
+
+After the environment is ready,
+
+```shell
+yarn dev
 ```
 
 visit http://localhost:8888/wp-admin/ to access the backend.

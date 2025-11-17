@@ -1,44 +1,45 @@
 {
-  "name": "funky-headline",
-  "version": "0.0.1",
-  "scripts": {
-    "wp-env": "wp-env",
-    "start": "npm run wp-env start",
-    "stop": "npm run wp-env stop",
-    "destroy": "npm run wp-env destroy",
-    "cli": "npm run wp-env run cli",
-    "poststart": "npm run cli wp rewrite structure '/%postname%/' && npm run assets:start",
-    "prepare": "husky",
-    "assets:start": "wp-scripts start",
-    "assets:build": "wp-scripts build",
-    "lint": "eslint ./src --ext .js,.jsx,.ts,.tsx"
-  },
-  "keywords": [
-    "Gutenberg",
-    "Gutenberg Block",
-    "Headline"
-  ],
-  "author": "Marko Nikolaš marko.nikolas@news.co.uk",
-  "license": "GPL-2.0-only",
-  "lint-staged": {
-    "*.js": [
-      "wp-scripts lint-js",
-      "wp-scripts format"
-    ],
-    "*.scss": "npx stylelint --fix"
-  },
-  "description": "A funky headline block with an eye-catching look :)",
-  "devDependencies": {
-    "@wordpress/block-editor": "^14.2.0",
-    "@wordpress/blocks": "^13.7.0",
-    "@wordpress/env": "^10.7.0",
-    "@wordpress/eslint-plugin": "^21.0.0",
-    "@wordpress/i18n": "^5.7.0",
-    "@wordpress/scripts": "^26.12.0",
-    "husky": "^9.1.6",
-    "lint-staged": "^15.2.10"
-  },
-  "dependencies": {
-    "prop-types": "^15.8.1"
-  }
+	"name": "funky-headline",
+	"version": "0.0.1",
+	"scripts": {
+		"wp-env": "wp-env",
+		"start": "yarn wp-env start",
+		"stop": "yarn wp-env stop",
+		"destroy": "yarn wp-env destroy",
+		"cli": "yarn wp-env run cli",
+		"poststart": "yarn cli wp rewrite structure '/%postname%/' && yarn dev",
+		"prepare": "husky",
+		"dev": "wp-scripts start",
+		"build": "wp-scripts build",
+		"lint": "eslint ./src --ext .js,.jsx,.ts,.tsx"
+	},
+	"keywords": [
+		"Gutenberg",
+		"Gutenberg Block",
+		"Headline"
+	],
+	"author": "Marko Nikolaš marko.nikolas@news.co.uk",
+	"license": "GPL-2.0-only",
+	"lint-staged": {
+		"*.js": [
+			"wp-scripts lint-js",
+			"wp-scripts format"
+		],
+		"*.scss": "npx stylelint --fix"
+	},
+	"description": "A funky headline block with an eye-catching look :)",
+	"devDependencies": {
+		"@wordpress/block-editor": "^14.2.0",
+		"@wordpress/blocks": "^13.7.0",
+		"@wordpress/env": "^10.7.0",
+		"@wordpress/eslint-plugin": "^21.0.0",
+		"@wordpress/i18n": "^5.7.0",
+		"@wordpress/scripts": "^26.12.0",
+		"husky": "^9.1.6",
+		"lint-staged": "^15.2.10"
+	},
+	"dependencies": {
+		"prop-types": "^15.8.1"
+	},
+	"packageManager": "yarn@1.22.22+sha512.a6b2f7906b721bba3d67d4aff083df04dad64c399707841b7acf00f6b133b7ac24255f2652fa22ae3534329dc6180534e98d17432037ff6fd140556e2bb3137e"
 }
